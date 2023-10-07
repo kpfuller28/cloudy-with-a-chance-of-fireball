@@ -18,6 +18,55 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+
+### Collaborators should start with the main branch by using:
+```
+git checkout main
+git fetch origin
+git reset --hard origin/main
+```
+
+### Once the commands above have been run, create a new branch per feature you're working on using:
+```
+git checkout -b "new-feature"
+```
+
+### Update add, and commit as you normally would with git. To allow other collaborators to view your updates, use:
+```
+git push -u origin "new-feature"
+```
+
+### Forgot to create a new branch? Use:
+```
+git checkout "current_branch"
+git branch "new-branch"
+git switch "new-branch"
+```
+
+### Want the latest main while still working on a branch? Use:
+```
+git checkout main
+git fetch origin
+git reset --hard origin/main
+
+git checkout "feature"
+git merge main
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
